@@ -12,7 +12,7 @@ function todos(state = [], action) {
                     id: action.id,
                     text: action.text,
                     completed: false,
-                    priority: action.priority
+                    highPriority: action.highPriority
                 }
             ]
         case TOGGLE_TODO:

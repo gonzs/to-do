@@ -23,12 +23,12 @@ export const VisibilityFilters = {
 
 let nextTodoId = 0
 
-export function addTodo(text, priority) {
+export function addTodo(text, highPriority) {
   return {
     type: ADD_TODO,
     id: nextTodoId++,
     text,
-    priority
+    highPriority
   }
 }
 

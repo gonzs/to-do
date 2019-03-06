@@ -1,67 +1,41 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
+import { Label, Form, Button, Icon, Input } from 'semantic-ui-react'
+import _ from 'lodash'
 
 let AddTodo = ({ dispatch }) => {
     let text
-    let priority1
-    let priority2
-    let priority3
-    let priority
+    let highPriority
 
     return (
         <div>
-            <form
+            <Form
                 onSubmit={e => {
                     e.preventDefault()
-                    if (!text.value.trim()) {
+                    if (!text.inputRef.value.trim()) {
                         return
                     }
-
-                    console.log(priority1)
-                    console.log(priority2)
-                    console.log(priority3)
-                    console.log(priority)
-
-                    if (priority1.checked) {
-                        priority = priority1
-                    } else {
-                        if (priority2.checked) {
-                            priority = priority2
-                        } else {
-                            priority = priority3
-                        }
-                    }
-
-                    dispatch(addTodo(text.value, priority.value))
-                    text.value = ''
+                 
+                    dispatch(addTodo(text.inputRef.value, highPriority.inputRef.checked))
+                    text.inputRef.value = ''
+                    highPriority.inputRef.checked = false
                 }}
             >
-                <input
-                    ref={node => {
-                        text = node
-                    }}
-                />
-                <input type="radio" name="priority" value="high"
-                    ref={node => {
-                        priority1 = node
-                    }}
-                />High
-                <input type="radio" name="priority" value="medium"
-                    ref={node => {
-                        priority2 = node
-                    }}
-                />Medium
-                <input type="radio" name="priority" value="low"
-                    ref={node => {
-                        priority3 = node
-                    }}
-                />Low
-                <button type="submit">Add Todo</button>
-            </form>
+                <Input placeholder='new task...' ref={node => { text = node }} />
+                <Button type="submit"><Icon name='add' /></Button>
+                <br></br>
+                <br></br>
+                <Label color='red' key='red'>
+                    {_.capitalize('High Priority')}
+                </Label>
+                <Input type='radio' name='highPrior' value='Yes' ref={node => { highPriority = node }}/>Yes
+                <Input type='radio' name='highPrior' value='No' defaultChecked/>No
+            </Form>
         </div>
     )
 }
+
 AddTodo = connect()(AddTodo)
 
 export default AddTodo

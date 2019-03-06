@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Button } from 'semantic-ui-react'
 
 const Link = ({ active, children, onClick }) => {
     if (active) {
@@ -7,15 +8,14 @@ const Link = ({ active, children, onClick }) => {
     }
 
     return (
-        <a
-            href=""
+        <Button
             onClick={e => {
                 e.preventDefault()
                 onClick()
             }}
         >
             {children}
-        </a>
+        </Button>
     )
 }
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css'
 import Footer from './components/Footer'
 import AddTodo from './containers/AddTodo'
