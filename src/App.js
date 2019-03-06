@@ -1,26 +1,14 @@
 import React, { Component } from 'react'
 import './App.css'
-import {createStore} from 'redux'
-import todoApp from './reducers'
-import {
-  addToDo,
-  toggleToDo,
-  setVisibilityFilter,
-  VisibilityFilters
-} from './actions'
+import Footer from './components/Footer'
+import AddTodo from './containers/AddTodo'
+import VisibleTodoList from './containers/VisibleTodoList'
 
-const store = createStore(todoApp)
-
-console.log(store.getState())
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-
-      </div>
-    );
-  }
-}
-
+const App = () => (
+  <div className="App">
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </div>
+)
 export default App;
