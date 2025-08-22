@@ -14,7 +14,7 @@ A modern, feature-rich Todo application built with React and Redux. Keep track o
   - Active (incomplete) tasks
   - Completed tasks
   - High priority tasks
-- 🎨 **Modern UI**: Clean interface using Semantic UI React components
+- 🎨 **Modern UI**: Clean interface using Semantic UI React components (😆)
 - ⚡ **Real-time Updates**: Instant updates with Redux state management
 
 ## Technology Stack
