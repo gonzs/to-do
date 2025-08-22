@@ -1,68 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Todo App
+
+A modern, feature-rich Todo application built with React and Redux. Keep track of your tasks with priority levels and smart filtering options.
+
+![Todo App Screenshot](https://github.com/user-attachments/assets/f0ae4766-d7a3-4211-bd07-1989b343960d)
+
+## Features
+
+- ✅ **Add Tasks**: Create new todo items with a simple, intuitive interface
+- 🔔 **Priority System**: Mark tasks as high priority with visual indicators (bell icon)
+- ✔️ **Mark Complete**: Click on tasks to toggle completion status with strikethrough effect
+- 🔍 **Smart Filtering**: Filter tasks by status:
+  - All tasks
+  - Active (incomplete) tasks
+  - Completed tasks
+  - High priority tasks
+- 🎨 **Modern UI**: Clean interface using Semantic UI React components
+- ⚡ **Real-time Updates**: Instant updates with Redux state management
+
+## Technology Stack
+
+- **React 18** - Modern React with hooks
+- **Redux** - Predictable state management
+- **Semantic UI React** - Beautiful, responsive UI components
+- **Create React App** - Zero-configuration setup
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gonzs/to-do.git
+   cd to-do
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Runs the app in development mode. The page will reload when you make edits.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder. The build is minified and optimized for best performance.
 
 ### `npm run eject`
+**Note: This is a one-way operation. Once you `eject`, you can't go back!**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Ejects from Create React App to give you full control over configuration files.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **Adding Tasks**: Type your task in the input field and click the add button (➕)
+2. **Setting Priority**: Select "Yes" under "High Priority" before adding to mark a task as high priority
+3. **Completing Tasks**: Click on any task to mark it as complete/incomplete
+4. **Filtering**: Use the filter buttons at the bottom to view specific task categories
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project Information
 
-## Learn More
+- **Created**: August 2025
+- **Last Updated**: August 22, 2025
+- **Version**: 0.1.0
+- **License**: Private
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Changelog
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### [0.1.0] - 2025-08-22
+#### Added
+- Initial release of Todo App
+- Core todo functionality (add, complete, filter)
+- High priority task system with visual indicators
+- Redux state management implementation
+- Semantic UI React integration
+- Responsive design
+- Filter system for task organization
 
-### Code Splitting
+#### Features
+- Task creation with priority levels
+- Task completion toggle
+- Visual indicators for high priority items (bell icon)
+- Filter by All, Active, Completed, and High Priority tasks
+- Modern React hooks implementation
+- Real-time state updates
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+*This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
